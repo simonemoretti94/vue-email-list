@@ -18,6 +18,7 @@ export default {
 <style scoped>
 h3 {
   color: var(--fancy-blue);
+  text-shadow: -1.5px -1px rgb(197, 197, 197);
 }
 
 #main_div h3:first-child {
