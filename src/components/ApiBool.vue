@@ -2,16 +2,16 @@
 export default {
   name: 'ApiBool',
   props: {
-    mail: Array,
+    mailEl: String,
+    indexEl: Number,
   },
 }
 
 </script>
 
 <template>
-  <div id="main_div" class="col-10 d-flex flex-column  justify-content-evenly  align-items-center mt-1"
-    v-for="(mailAddress, index) in mail">
-    <h3 class="text-center">Iteration: {{ index }} - {{ mailAddress }}</h3>
+  <div id="main_div" class="col-10 d-flex flex-column  justify-content-evenly  align-items-center mt-1">
+    <h3 class="text-center">Iteration: {{ indexEl }} - {{ mailEl }}</h3>
   </div>
 </template>
 

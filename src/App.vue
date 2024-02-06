@@ -35,7 +35,7 @@ export default {
     <h2 class="text-white text-center">vue-email-list</h2>
   </header>
   <main class="d-flex flex-column  justify-content-evenly align-items-center">
-    <ApiBool :mail="mailArray"></ApiBool>
+    <ApiBool v-for="(mailAddress, index) in mailArray" :mailEl="mailAddress" :indexEl="index"></ApiBool>
   </main>
 </template>
 
