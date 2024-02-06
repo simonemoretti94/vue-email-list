@@ -21,6 +21,13 @@ h3 {
   text-shadow: -1.5px -1px rgb(197, 197, 197);
 }
 
+h3:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgba(0, 0, 255, 0.552);
+  text-shadow: 0 5px 5px rgba(0, 45, 194, 0.349), 0 5px 5px rgba(0, 45, 194, 0.349);
+}
+
 #main_div h3:first-child {
   margin-top: .2rem;
   transform: skew(-5deg);
