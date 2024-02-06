@@ -31,7 +31,7 @@ export default {
 
 <template>
   <header class="d-flex flex-row justify-content-center ">
-    <i class="logo fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+    <i id="logo" class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
     <h2 class="text-white text-center">vue-email-list</h2>
   </header>
   <main class="d-flex flex-column  justify-content-evenly align-items-center">
@@ -44,18 +44,23 @@ header {
   border-bottom: groove 2px white;
 }
 
-.logo {
-  /* height: 6em;
-  padding: 1.5em; */
+#logo {
   will-change: filter;
   transition: filter 300ms;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+#logo:hover {
+  filter: drop-shadow(1px 1px 1rem rgb(70, 78, 237));
 }
 
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+h2 {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+h2:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 </style>
